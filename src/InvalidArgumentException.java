@@ -9,7 +9,7 @@ public class InvalidArgumentException extends Exception{
      * the proper usage of arguments to the Exception class.
      */
     public InvalidArgumentException(){
-        super("usage: ShadowLife <tick rate> <max ticks> <world file>");
+        super("usage: Simulation <tick rate> <max ticks> <world file>");
     }
 
 }

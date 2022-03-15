@@ -143,16 +143,16 @@ public class Thief extends MovingActor{
     public void runMitosisPoolEvent(){
         // Add new Thief facing to the right of current direction, and move one tile.
         Actor actor1 = new Thief(getX(), getY(), rotatedDirection(90));
-        ShadowLife.addActor(actor1);
+        Simulation.addActor(actor1);
         actor1.update();
 
         // Add another Thief facing to the left of current direction, and move actor one tile.
         Actor actor2 = new Thief(getX(), getY(), rotatedDirection(270));
-        ShadowLife.addActor(actor2);
+        Simulation.addActor(actor2);
         actor2.update();
 
         // Remove the current Thief.
-        ShadowLife.removeActor(this);
+        Simulation.removeActor(this);
     }
 
 
@@ -166,16 +166,16 @@ public class Thief extends MovingActor{
         if (isActive()){
             switch (getDirection()) {
                 case Direction.UP:
-                    move(0, -ShadowLife.TILE_SIZE);
+                    move(0, -Simulation.TILE_SIZE);
                     break;
                 case Direction.DOWN:
-                    move(0, ShadowLife.TILE_SIZE);
+                    move(0, Simulation.TILE_SIZE);
                     break;
                 case Direction.LEFT:
-                    move(-ShadowLife.TILE_SIZE, 0);
+                    move(-Simulation.TILE_SIZE, 0);
                     break;
                 case Direction.RIGHT:
-                    move(ShadowLife.TILE_SIZE, 0);
+                    move(Simulation.TILE_SIZE, 0);
                     break;
             }
         }

@@ -11,12 +11,12 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 
 /**
- * The ShadowLife class contains the main method to run a graphical simulation of a world and its inhabitants,
+ * The Simulation class contains the main method to run a graphical simulation of a world and its inhabitants,
  * load the actors, and continue calling the update method for each actor at the specified tick rate.
  * @author Eisaku Daniel Tanaka
  * @version 2.0
  */
-public class ShadowLife extends AbstractGame {
+public class Simulation extends AbstractGame {
     /* Attributes to store fundamental data needed to run the simulation.
     * Includes arguments, tick rate, actor arraylist, etc.*/
     private static String[] args;
@@ -122,11 +122,11 @@ public class ShadowLife extends AbstractGame {
         }
     }
 
-    /** This is the ShadowLife constructor that throws exceptions if arguments read from "res/args.txt" is invalid.
+    /** This is the Simulation constructor that throws exceptions if arguments read from "res/args.txt" is invalid.
      * Calls loadActors() method for actors to be loaded.
      * @throws InvalidArgumentException This is an exception to catch any invalid arguments
      */
-    public ShadowLife() throws InvalidArgumentException{
+    public Simulation() throws InvalidArgumentException{
         // Read arguments
         args = argsFromFile();
 
@@ -242,7 +242,7 @@ public class ShadowLife extends AbstractGame {
 
         // Run ShadowLife program and catch invalid arguments
         try{
-            new ShadowLife().run();
+            new Simulation().run();
         } catch(InvalidArgumentException e){
             System.out.println(e.getMessage());
             System.exit(-1);
