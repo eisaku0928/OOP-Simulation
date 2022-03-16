@@ -1,5 +1,4 @@
 # OOP (Object Oriented Programming) Simulation
-## Overview
 A graphical simulation of a world and its inhabitants, using advanced software engineering (object oriented) concepts. Utilized concepts include (but are not limited to) polymorphism (overriding), inheritance (superclasses and subclasses), interfaces, encapsulation, abstraction.
 
 All actors have a function within the simulation. The inhabitants (*gatherers*) will gather fruit from trees and deposit them on *stockpiles*. *Thieves* will be stealing fruit from the stockpiles, placing it in their *hoards*. Once both gatherers and theives finish gaining all fruits, they will rest in front of *fences*. 
