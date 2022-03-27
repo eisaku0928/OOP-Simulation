@@ -6,7 +6,7 @@ A graphical simulation of a world and its inhabitants, using advanced software e
 All actors have a function within the simulation. The inhabitants (*gatherers*) will gather fruit from trees and deposit them on *stockpiles*. *Thieves* will be stealing fruit from the stockpiles, placing it in their *hoards*. Once both gatherers and theives finish gaining all fruits, they will rest in front of *fences*. 
 
 The UML (_Unified Modeling Language_) design overview of the objects, attributes, methods, and associations:
-![ObjectOrientedDesign.pdf](https://github.com/EisakuDanielTanaka/OOP-Simulation/files/8250143/ObjectOrientedDesign.pdf)
+![ObjectOrientedDesign](https://github.com/EisakuDanielTanaka/OOP-Simulation/blob/main/uml.png)
 
 The behavior of the simulation is completely determined by the *world file*, any csv file that is located within the folder "/res/worlds". It specifices the actor and their placed location at the beginning of the simulation. When all gatherers and thieves reaches a fence, the simulation halts. 
 
