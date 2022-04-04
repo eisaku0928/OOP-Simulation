@@ -22,7 +22,7 @@ For ease of running the simulation, all arguments are stored in ```res/args.txt`
 usage: Simulation <tick rate> <max number of ticks> <world file>
 ```
 
-When the program finishes, the number of elapsed ticks and the amount of fruit at each location are printed to std out.
+When the program finishes, the number of elapsed ticks and the amount of fruit at each location are printed to stdout.
 
 ## Actors
 * Gatherers: White cat looking actor (stored in ```res/images/gatherer.png```). Its purpose is to go to trees, "collect" fruits, and drop them on their stockpiles. After collecting all fruit, gatherers rest in front of a fence.
